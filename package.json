@@ -21,7 +21,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn build && yarn test"
   },
   "devDependencies": {
     "@types/jest": "^28.1.6",
