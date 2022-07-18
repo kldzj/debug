@@ -61,6 +61,10 @@ export class Debugger {
     return new Debugger(name, this.config, this);
   }
 
+  public createFunction(): (...args: any[]) => void {
+    return this.debug.bind(this);
+  }
+
   private shouldLog(): boolean {
     const debug = process.env.DEBUG;
     if (debug === undefined) {
