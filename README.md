@@ -41,7 +41,7 @@ const debug = createDebugger("test").createFunction();
 debug("Hello World");
 ```
 
-```console
-# in your terminal:
+```shell
+# In your terminal:
 $ DEBUG=test:* node demo.js
 ```
